@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "yt_summary"
+version = "0.1.0"
+description = "Summarizes a youtube video from a link using transcript and your local ollama"
+authors = ["Levente Berky <levente@berky.me>"]
+readme = "README.md"
+license = "BSD"
+# packages = [
+#   { include = "yt-summary" }
+# ]
+
+[tool.poetry.scripts]
+yt_summary = 'yt_summary.main:main'
+
+[tool.poetry.dependencies]
+python = "^3.10"
+ollama = "^0.1.8"
+youtube-transcript-api = "^0.6.2"
+pyperclip = "^1.8.2"
+argparse = "^1.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
