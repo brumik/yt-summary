@@ -1,16 +1,13 @@
 [tool.poetry]
-name = "yt_summary"
+name = "ytsum"
 version = "0.1.0"
 description = "Summarizes a youtube video from a link using transcript and your local ollama"
 authors = ["Levente Berky <levente@berky.me>"]
 readme = "README.md"
 license = "BSD"
-# packages = [
-#   { include = "yt-summary" }
-# ]
 
 [tool.poetry.scripts]
-yt_summary = 'yt_summary.main:main'
+ytsum = 'ytsum.main:main'
 
 [tool.poetry.dependencies]
 python = "^3.10"
