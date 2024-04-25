@@ -2,3 +2,4 @@ cache
 dist
 result
 **/__pycache__
+.direnv
